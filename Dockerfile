@@ -10,11 +10,11 @@ RUN git clone \
     https://github.com/cjnolet/AtacWorks.git atacworks
 
 
-RUN /opt/conda/envs/rapids/bin/pip install \
-    scanpy==1.9.1 wget pytabix dash-daq \
+RUN /opt/conda/bin/pip install \
+    scanpy==1.11.3 wget pytabix dash-daq \
     dash-html-components dash-bootstrap-components dash-core-components
 
-RUN cd atacworks && /opt/conda/envs/rapids/bin/pip install .
+RUN cd atacworks && /opt/conda/bin/pip install --no-deps .
 
 USER rapids
 WORKDIR /workspace
