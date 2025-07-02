@@ -1,4 +1,4 @@
-ARG BASE_IMAGE=rapidsai/rapidsai:22.12-cuda11.5-runtime-ubuntu18.04-py3.9
+ARG BASE_IMAGE=rapidsai/notebooks:25.06-cuda12.8-py3.12
 
 FROM ${BASE_IMAGE}
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
