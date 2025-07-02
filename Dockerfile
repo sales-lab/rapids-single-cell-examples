@@ -31,7 +31,7 @@ CMD jupyter-lab \
 		--allow-root \
 		--port=8888 \
 		--ip=0.0.0.0 \
-		--notebook-dir=/workspace \
+		--notebook-dir=/workspace/rapids-single-cell-examples/notebooks \
 		--NotebookApp.password="" \
 		--NotebookApp.token="" \
 		--NotebookApp.password_required=False
